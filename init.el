@@ -1,3 +1,4 @@
+;; MELPA
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
 		    (not (gnutls-available-p))))
@@ -10,8 +11,10 @@
     (add-to-list 'package-archives (cons "gnu" (concat proto "://elpa.gnu.org/packages/")))))
 (package-initialize)
 
+;; Theme
 (load-theme 'zenburn t)
 
+;; Wind Move
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
