@@ -66,3 +66,14 @@ My Emacs
 (global-set-key (kbd "C-c <up>")    'windmove-up)
 (global-set-key (kbd "C-c <down>")  'windmove-down)
 ```
+
+## Indentation
+
+[Indentation Basics](https://www.emacswiki.org/emacs/IndentationBasics)
+
+```el
+(setq-default indent-tabs-mode nil)
+(setq tab-width 2)
+(defvaralias 'c-basic-offset 'tab-width)
+(defvaralias 'cperl-indent-level 'tab-width)
+```
